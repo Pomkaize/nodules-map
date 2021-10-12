@@ -5,6 +5,9 @@ class NodulesMap {
     add(factory) {
         return this;
     }
+    get(path) {
+        return this.map.get(path);
+    }
     _add(path, factory) {
         this.map.set(path, factory);
 
